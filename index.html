@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Stephanie Ong">
+    <title>Fitness survey</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Fitness level and goals</h1>
+        <p id="description">Please fill out the form so we can offer the best workout plan for you</p>
+      </header>
+      <form id="survey-form" action="" method="post">
+        <div class="form__container">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form__container">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form__container">
+          <label id="number-label" for="age">Age</label>
+          <input id="number" name="age" type="number" min="18" max="110" pattern="[\d+]" placeholder="Age">
+        </div>
+        <div class="form__container">
+          <label for="workout-frequency">How often do you workout?</label>
+          <select id="dropdown" name="workout-frequency">
+            <option value="0-2">0-2 times per week</option>
+            <option value="3-5">3-5 times per week</option>
+            <option value=">5">more than 5 times per week</option>
+          </select>
+        </div>
+        <div class="form__container">
+          <p>Do you have a sedentary job?</p>
+          <label for="sedentary-job" class="radio">
+            <input type="radio" id="sedentary-job" name="sedentary-job" value="yes" checked> Yes
+          </label>
+          <label for="sedentary-job" class="radio">
+            <input type="radio"  id="sedentary-job" name="sedentary-job" value="no"> No
+          </label>
+        </div>
+         <div class="form__container">
+          <label for="fitness-goal">What are your fitness goals?</label>
+          <label><input type="checkbox" id="fitness-goal" name="fitness-goal" value="lose"> Lose weight</label>
+          <label><input type="checkbox" id="fitness-goal" name="fitness-goal" value="gain"> Build muscle</label>
+          <label><input type="checkbox" id="fitness-goal" name="fitness-goal" value="mind"> Feel good mentally</label>
+        </div>
+        <div class="form__container">
+          <label for="features">Which features do you like to have in a fitness app?</label>
+          <textarea id="features" name="features" cols="3" rows="5" placeholder="Enter your message"></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

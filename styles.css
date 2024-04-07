@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(115deg, rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.7)), url("https://images.pexels.com/photos/4753996/pexels-photo-4753996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  color: #f3f3f3;
+}
+
+p {
+  margin-bottom: 0.4rem;
+}
+
+.container {
+  width: 80%;
+  min-width: 300px;
+  max-width: 600px;
+  margin: 2em auto;
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  font-style: italic;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+#survey-form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2em 3em;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8em;
+}
+
+label {
+  margin-bottom: 0.4em;
+}
+
+input, select, textarea {
+  border-radius: 0.4em;
+  padding: 0 1em;
+}
+
+input,
+select, 
+button[type="submit"] {
+  font-family: inherit;
+  border: none;
+}
+
+input, select {
+  height: 3em;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 1.4rem;
+}
+
+input[type="radio"] {
+  margin: 0 0.6em 0 0;
+}
+
+.checkbox {
+  display: flex;
+}
+
+input[type="checkbox"] {
+  height: unset;
+}
+
+textarea {
+  resize: none;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  border: none;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 50%;
+  height: 2.4em;
+  margin: 0 auto;
+  border-radius: 1.4em;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  color: #f3f3f3;
+  background-color: rgb(70, 70, 70);
+}
